@@ -1,0 +1,16 @@
+.top-bar,
+.title-bar {
+  background-color: $grey;
+  border-top-left-radius : 35px;
+  border-top-right-radius: 35px;
+}
+
+.container {
+  background-color: $grey;
+  max-width: 1060px;
+  margin: 10px auto;
+  border-radius: 35px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: $dkblue;
+}

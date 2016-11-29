@@ -1,0 +1,297 @@
+// font families (for reference)
+// font-family: 'Tillana', cursive;
+// font-family: 'Bangers', cursive;
+// font-family: 'Boogaloo', cursive;
+
+
+/* variables */
+
+//$ccblue :rgb(68,116,157);   // Corporate Cobalt #44749D
+$dkblue : rgb(25, 25, 112);
+//$dkblue : rgb(68,116,157);
+$ltblue : rgb(198,212,225); //rgba(198,212,225,.5);  // light blue #C6D4E1
+$white :rgb(255,255,255);   // white #FFFFFF
+$ltbeige :rgb(235,231,224); // So Sleepy #EBE7E0
+$dkbeige: rgb(189,184,173); // Corporate Bay #BDB8AD
+
+//  Accent colors I picked myself
+$dksalmon: rgb(255, 77, 136);  //rgb(255, 102, 102); //rgb(255, 127, 163);
+$ltsalmon: rgb(255, 230, 238); //rgb(255, 204, 204); //rgb(255, 196, 212);
+
+//  Neutral colors for text and such
+$grey :rgb(224,224,224);
+$charcoal :rgb(90, 93, 99);
+
+//@import 'util/mixins';
+@import "settings";
+
+@mixin roundBdr($radius, $bckColor) {
+  border-radius : $radius;
+  background-color: $bckColor;
+}
+
+body{
+  font-family: 'Tillana', cursive;
+  color: $charcoal;
+  background-color: $charcoal;
+}
+
+h1{
+  font-size: 3em;
+  font-family: 'Bangers', cursive;
+  color:$dkblue;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-family: 'Bangers', cursive;
+  color: $dkblue;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-family: 'Boogaloo', cursive;
+  color: $dksalmon;
+}
+
+h4{
+  font-size: 1.5em;
+  font-family: 'Boogaloo', cursive;
+  color:$dkblue;
+}
+
+h5{
+  font-size: 1.25em;
+  font-family: 'Boogaloo', cursive;
+  color:$ltblue;
+}
+
+h6{
+  font-size: 1.25em;
+  font-family: 'Boogaloo', cursive;
+  color:$ltsalmon;
+  font-style:italic;
+}
+
+// Styles for title bar (hidden unless screen is small)
+.title-bar {
+    color: $dkblue;
+}
+button.menu-icon {
+  background-color: $dkblue;
+  color: $dksalmon;
+}
+
+// Styles for the top bar (both left and right)
+.top-bar {
+  .top-bar-left,
+  .top-bar-right {
+    .menu {
+      background-color: transparent;
+      display: inline-flex;
+      vertical-align: middle;
+    }
+  }
+}
+
+//  Styles for the top bar right
+.top-bar-right {
+  .menu {
+    padding-top: 10%;     // to give appearance of being vertically centered
+    .active{              // Styles for the active menu link
+      a{
+        @include roundBdr(10px, $ltsalmon);
+        //color: white;
+        //text-shadow: 3px 3px 3px $white;
+        box-shadow: 4px 4px 6px $dkblue;
+        h4{
+          color: $dkblue;
+        }
+      }
+    }
+    a {                    // Styles for the other menu links
+      color: $dkblue;
+      :hover {
+        color: $ltsalmon;
+        text-shadow: 2px 2px 2px $dkblue;
+        //@include roundBdr(10px, $charcoal);
+        //background-color: $charcoal;
+      }
+    }
+  }
+}
+
+// style for the left "menu" (it's only one list item) which is
+//   actually the title (Janet Weber ...)
+.menu-text {
+  margin-left: 5em;
+  h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: normal;
+    text-align: center;
+    width: 100%;
+    text-shadow: 3px 3px 4px $white;
+  }
+  h3 {
+    color: $charcoal;
+    text-shadow: 3px 3px 2px $white;
+  }
+}
+
+.logo {
+  @include roundBdr (10px, $white);
+  width: 25%;
+  box-shadow: 4px 4px 6px $dkblue;
+}
+
+.inline {display: inline;}
+.orbit-image {width: 15em;}
+
+.myOrbit {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  .orbit {
+    border-style: solid;
+    border-width: 3px;
+    border-color: $charcoal;
+    @include roundBdr(15px,$white);
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  h3 {
+    font-size: 2em;
+    color: $white;
+    text-shadow: 4px 4px 4px black;
+  }
+}
+
+.orbit-bullets button {
+  background-color: $dkblue;
+}
+
+.orbit-slide p{
+  color: $dkblue;
+  font-size: .9em;
+  padding: .25em;
+}
+
+
+.side-nav {
+  padding-top: 2em;
+}
+
+
+.left-nav {
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.5em;
+  background-color: transparent;
+  //@include roundBdr(35px, $grey);
+  color: $white;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 4em;
+  margin: 0;
+  border-width: 0;
+  h3 {
+    color: $white;
+    text-shadow: 3px 3px 3px $dkblue;
+  }
+  a {
+    color: $dkblue;
+    text-shadow: 2px 2px 2px $ltblue;
+    border-bottom-left-radius: 30px;
+  }
+  a:hover{
+    color: $ltsalmon;
+    text-shadow: 2px 2px 1px $dkblue;
+  }
+}
+
+.splash-container {
+  background-image: url("../images/mandelbrot.png");
+  background-size: cover;
+  border-style: solid;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-color: $dkblue;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 35px;
+  a:hover {
+    h2 {
+    color: $ltsalmon;
+  }
+  }
+}
+
+.splash {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+  border-style: solid;
+  border-radius: 15px;
+  //margin: 1.25em auto;
+  margin: 1.5em 0 1.5em 1.25em;
+  background-color: rgba(255,255,255, .85);
+  h2 {
+    color: $dkblue;
+    //text-shadow: 8px 8px 16px $dkblue;
+  }
+  h3, h4 {
+    color: $dkblue;
+  }
+  p {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 1em;
+    color: $dkblue;
+  }
+  .left-nav h3{
+    color: $white;
+  }
+}
+
+// For Resume reveal
+.reveal {
+  max-width: 960px;
+  width: 700px;
+}
+
+#resume-small {
+  width: 100%;
+}
+
+// For Gallery reveal
+.gal {width:400px;}
+.gal-vid {width:500px;}
+.gal-web {width:500px;}
+
+.gallery {
+  padding-left: 1em;
+  padding-right: 1em;
+  h6 {
+    color: $dkblue;
+  }
+  .thumbnail:hover {
+    box-shadow: 0 0 6px 2px rgba($dkblue, 0.85);
+  }
+  p {
+    font-size: .75em;
+    padding: 0;
+    margin: 0;
+  }
+  img {
+    margin-bottom: .25em;
+  }
+  a {font-family: 'Bangers', cursive;}
+}
+
+.inline-heading {
+  text-align: left;
+  h3, h5, h6 {
+      color: $dkblue;
+      display: inline; }
+  padding-left: 1em;
+  padding-bottom: 1em;
+}

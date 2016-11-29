@@ -1,0 +1,226 @@
+/* variables */
+.top-bar,
+.title-bar {
+  background-color: #e0e0e0;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px; }
+
+.container {
+  background-color: #e0e0e0;
+  max-width: 1060px;
+  margin: 10px auto;
+  border-radius: 35px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: midnightblue; }
+
+body {
+  font-family: 'Tillana', cursive;
+  color: #5a5d63;
+  background-color: #5a5d63; }
+
+h1 {
+  font-size: 3em;
+  font-family: 'Bangers', cursive;
+  color: midnightblue; }
+
+h2 {
+  font-size: 2.25em;
+  font-family: 'Bangers', cursive;
+  color: midnightblue; }
+
+h3 {
+  font-size: 1.75em;
+  font-family: 'Boogaloo', cursive;
+  color: #ff4d88; }
+
+h4 {
+  font-size: 1.5em;
+  font-family: 'Boogaloo', cursive;
+  color: midnightblue; }
+
+h5 {
+  font-size: 1.25em;
+  font-family: 'Boogaloo', cursive;
+  color: #c6d4e1; }
+
+h6 {
+  font-size: 1.25em;
+  font-family: 'Boogaloo', cursive;
+  color: #ffe6ee;
+  font-style: italic; }
+
+.title-bar {
+  color: midnightblue; }
+
+button.menu-icon {
+  background-color: midnightblue;
+  color: #ff4d88; }
+
+.top-bar .top-bar-left .menu,
+.top-bar .top-bar-right .menu {
+  background-color: transparent;
+  display: inline-flex;
+  vertical-align: middle; }
+
+.top-bar-right .menu {
+  padding-top: 10%; }
+  .top-bar-right .menu .active a {
+    border-radius: 10px;
+    background-color: #ffe6ee;
+    box-shadow: 4px 4px 6px midnightblue; }
+    .top-bar-right .menu .active a h4 {
+      color: midnightblue; }
+  .top-bar-right .menu a {
+    color: midnightblue; }
+    .top-bar-right .menu a :hover {
+      color: #ffe6ee;
+      text-shadow: 2px 2px 2px midnightblue; }
+
+.menu-text {
+  margin-left: 5em; }
+  .menu-text h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: normal;
+    text-align: center;
+    width: 100%;
+    text-shadow: 3px 3px 4px white; }
+  .menu-text h3 {
+    color: #5a5d63;
+    text-shadow: 3px 3px 2px white; }
+
+.logo {
+  border-radius: 10px;
+  background-color: white;
+  width: 25%;
+  box-shadow: 4px 4px 6px midnightblue; }
+
+.inline {
+  display: inline; }
+
+.orbit-image {
+  width: 15em; }
+
+.myOrbit {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  .myOrbit .orbit {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #5a5d63;
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 1em;
+    padding-bottom: 1em; }
+  .myOrbit h3 {
+    font-size: 2em;
+    color: white;
+    text-shadow: 4px 4px 4px black; }
+
+.orbit-bullets button {
+  background-color: midnightblue; }
+
+.orbit-slide p {
+  color: midnightblue;
+  font-size: .9em;
+  padding: .25em; }
+
+.side-nav {
+  padding-top: 2em; }
+
+.left-nav {
+  font-family: 'Boogaloo', cursive;
+  font-size: 1.5em;
+  background-color: transparent;
+  color: white;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 4em;
+  margin: 0;
+  border-width: 0; }
+  .left-nav h3 {
+    color: white;
+    text-shadow: 3px 3px 3px midnightblue; }
+  .left-nav a {
+    color: midnightblue;
+    text-shadow: 2px 2px 2px #c6d4e1;
+    border-bottom-left-radius: 30px; }
+  .left-nav a:hover {
+    color: #ffe6ee;
+    text-shadow: 2px 2px 1px midnightblue; }
+
+.splash-container {
+  background-image: url("../images/mandelbrot.png");
+  background-size: cover;
+  border-style: solid;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-color: midnightblue;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 35px; }
+  .splash-container a:hover h2 {
+    color: #ffe6ee; }
+
+.splash {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+  border-style: solid;
+  border-radius: 15px;
+  margin: 1.5em 0 1.5em 1.25em;
+  background-color: rgba(255, 255, 255, 0.85); }
+  .splash h2 {
+    color: midnightblue; }
+  .splash h3, .splash h4 {
+    color: midnightblue; }
+  .splash p {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 1em;
+    color: midnightblue; }
+  .splash .left-nav h3 {
+    color: white; }
+
+.reveal {
+  max-width: 960px;
+  width: 700px; }
+
+#resume-small {
+  width: 100%; }
+
+.gal {
+  width: 400px; }
+
+.gal-vid {
+  width: 500px; }
+
+.gal-web {
+  width: 500px; }
+
+.gallery {
+  padding-left: 1em;
+  padding-right: 1em; }
+  .gallery h6 {
+    color: midnightblue; }
+  .gallery .thumbnail:hover {
+    box-shadow: 0 0 6px 2px rgba(25, 25, 112, 0.85); }
+  .gallery p {
+    font-size: .75em;
+    padding: 0;
+    margin: 0; }
+  .gallery img {
+    margin-bottom: .25em; }
+  .gallery a {
+    font-family: 'Bangers', cursive; }
+
+.inline-heading {
+  text-align: left;
+  padding-left: 1em;
+  padding-bottom: 1em; }
+  .inline-heading h3, .inline-heading h5, .inline-heading h6 {
+    color: midnightblue;
+    display: inline; }
+
+/*# sourceMappingURL=app.css.map */
